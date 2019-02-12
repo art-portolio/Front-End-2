@@ -33,17 +33,16 @@ const LinksWrapper = styled.nav`
     }
 `;
 
-const AppHeader = () => {
+const ArtistHeader = () => {
     return (
         <Header>
             <h1>Artsy</h1>
             <LinksWrapper>
-                <NavLink to="/">Home</NavLink>
-                <NavLink to="/">Artists</NavLink>
-                <NavLink to="/">Log Out</NavLink>
+                <NavLink exact to="/home">Home</NavLink>
+                <NavLink exact to="/">Log Out</NavLink>
             </LinksWrapper>
         </Header>
     );
 }
 
-export default AppHeader;
+export default ArtistHeader;

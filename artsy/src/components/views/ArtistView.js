@@ -1,9 +1,9 @@
 import React from 'react';
-import AppHeader from '../AppHeader';
+import ArtistHeader from '../ArtistHeader';
 
 const ArtistView = props => {
     return (
-        <AppHeader />
+        <ArtistHeader />
     );
 }
 
