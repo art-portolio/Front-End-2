@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Artsy",
+  "name": "Artsy Web Portfolio",
+  "description": "A web portfolio for artists",
   "icons": [
     {
       "src": "favicon.ico",
