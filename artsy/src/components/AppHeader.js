@@ -1,16 +1,48 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import styled from 'styled-components';
+
+/* Styled Components */
+const Header = styled.header`
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 10%;
+    background-color: #020202;
+    color: #F9F9F9;
+    -webkit-box-shadow: 0 3px 2px #777;
+	-moz-box-shadow: 0 3px 2px #777;
+	box-shadow: 0 3px 2px #777;
+`;
+
+const LinksWrapper = styled.nav`
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    a {
+        color: inherit;
+        text-decoration: none;
+        &:hover {
+            color: #A32330
+        }
+    }
+    .active {
+        text-decoration: underline;
+    }
+`;
 
 const AppHeader = () => {
     return (
-        <header className="App-header">
-            <h1 className="app-title">Artsy</h1>
-            <div className="links">
-                <NavLink to="/" className="app-link">Home</NavLink>
-                <NavLink to="/" className="app-link">Artists</NavLink>
-                <NavLink to="/" className="app-link">Log Out</NavLink>
-            </div>
-        </header>
+        <Header>
+            <h1>Artsy</h1>
+            <LinksWrapper>
+                <NavLink to="/">Home</NavLink>
+                <NavLink to="/">Artists</NavLink>
+                <NavLink to="/">Log Out</NavLink>
+            </LinksWrapper>
+        </Header>
     );
 }
 

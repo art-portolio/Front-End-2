@@ -1,10 +1,10 @@
 import React from 'react';
 import AppHeader from '../AppHeader';
 
-const HomeView = props => {
+const ArtistView = props => {
     return (
         <AppHeader />
     );
 }
 
-export default HomeView;
+export default ArtistView;
