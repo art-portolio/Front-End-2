@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-import GuestHeader from '../GuestHeader';
+import GuestHeader from './GuestHeader';
 
 /* Styled Componensts */
 const HomeContent = styled.div`

@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
-import './App.css';
 
-import HomeView from './components/views/HomeView';
-import ArtistView from './components/views/ArtistView';
-import LoginView from './components/views/LoginView';
-import SignupView from './components/views/SignupView';
+import HomeView from './components/views/GuestView/HomeView';
+import ArtistView from './components/views/ArtistView/ArtistView';
+import LoginView from './components/views/LoginView/LoginView';
+import SignupView from './components/views/SignupView/SignupView';
 
 class App extends Component {
   render() {

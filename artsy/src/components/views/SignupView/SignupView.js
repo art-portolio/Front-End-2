@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-import GuestHeader from '../GuestHeader';
-import SignUpForm from '../SignUpForm';
+import GuestHeader from '../GuestView/GuestHeader';
+import SignUpForm from './SignUpForm';
 
 class SignupView extends Component {
     constructor(props) {

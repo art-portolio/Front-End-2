@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-import GuestHeader from '../GuestHeader';
-import LogInForm from '../LogInForm';
+import GuestHeader from '../GuestView/GuestHeader';
+import LogInForm from './LogInForm';
 
 class LoginView extends Component {
     constructor(props) {
