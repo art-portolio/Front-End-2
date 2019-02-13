@@ -30,6 +30,7 @@ const LinksWrapper = styled.nav`
     }
     .active {
         text-decoration: underline;
+        color: #B6B6B6;
     }
 `;
 

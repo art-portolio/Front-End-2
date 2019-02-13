@@ -55,42 +55,50 @@ const SubmitButton = styled.button`
 const SignUpForm = props => {
     return (
         <FormWrapper>
-            <Form>
+            <Form onSubmit={props.submitHandler}>
                 <FormTitle>Member Sign Up Form</FormTitle>
                 <InputElement>
-                    <label for="fullName">Full Name:</label>
+                    <label htmlFor="fullName">Full Name:</label>
                     <input 
                         id="fullName"  
                         type="text" 
                         name="fullName" 
                         placeholder="ex. Johnny Appleseed"
+                        onChange={props.inputHandler}
+                        value={props.currentState.fullName}
                     />
                 </InputElement>
                 <InputElement>
-                    <label for="email">Email:</label>
+                    <label htmlFor="email">Email:</label>
                     <input 
                         id="email"
                         type="text"
                         name="email"
                         placeholder="jappleseed@email.com"
+                        onChange={props.inputHandler}
+                        value={props.currentState.email}
                     />
                 </InputElement>
                 <InputElement>
-                    <label for="user">Username:</label>
+                    <label htmlFor="user">Username:</label>
                     <input 
                         id="user"
                         type="text"
                         name="username"
                         placeholder="jappleseed"
+                        onChange={props.inputHandler}
+                        value={props.currentState.username}
                     />
                 </InputElement>
                 <InputElement>
-                    <label for="pwd">Password:</label>
+                    <label htmlFor="pwd">Password:</label>
                     <input 
                         id="pwd"
                         type="password"
                         name="password"
                         placeholder="password..."
+                        onChange={props.inputHandler}
+                        value={props.currentState.password}
                     />
                 </InputElement>
                 <SubmitButton type="submit">Sign Up</SubmitButton>

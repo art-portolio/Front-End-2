@@ -55,24 +55,28 @@ const SubmitButton = styled.button`
 const LogInForm = props => {
     return (
         <FormWrapper>
-            <Form>
+            <Form onSubmit={props.submitHandler}>
                 <FormTitle>Member Log In Form</FormTitle>
                 <InputElement>
-                    <label for="user">Username:</label>
+                    <label htmlFor="user">Username:</label>
                     <input 
                         id="user"
                         type="text"
                         name="username"
                         placeholder="ex. jappleseed"
+                        onChange={props.inputHandler}
+                        value={props.usernameVal}
                     />
                 </InputElement>
                 <InputElement>
-                    <label for="pwd">Password:</label>
+                    <label htmlFor="pwd">Password:</label>
                     <input 
                         id="pwd"
                         type="password"
                         name="password"
                         placeholder="password..."
+                        onChange={props.inputHandler}
+                        vaue={props.passwordVal}
                     />
                 </InputElement>
                 <SubmitButton type="submit">Log In</SubmitButton>

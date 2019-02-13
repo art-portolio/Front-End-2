@@ -30,16 +30,17 @@ const LinksWrapper = styled.nav`
     }
     .active {
         text-decoration: underline;
+        color: #B6B6B6;
     }
 `;
 
-const ArtistHeader = () => {
+const ArtistHeader = props => {
     return (
         <Header>
             <h1>Artsy</h1>
             <LinksWrapper>
-                <NavLink exact to="/home">Home</NavLink>
-                <NavLink exact to="/">Log Out</NavLink>
+                <NavLink exact to={`/home/${props.userID}`}>Home</NavLink>
+                <NavLink exact to="/login" onClick={props.logoutHandler}>Log Out</NavLink>
             </LinksWrapper>
         </Header>
     );
