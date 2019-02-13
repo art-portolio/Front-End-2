@@ -63,7 +63,7 @@ const LogInForm = props => {
                         id="user"
                         type="text"
                         name="username"
-                        placeholder="jappleseed"
+                        placeholder="ex. jappleseed"
                     />
                 </InputElement>
                 <InputElement>

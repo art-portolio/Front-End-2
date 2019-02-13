@@ -16,8 +16,13 @@ const HomeText = styled.div`
     text-align: center;
     margin: 5% 0;
 
+    h2 {
+        text-decoration: underline #A32330;
+    }
+
     p {
         margin: 2% 0;
+        line-height: 1.5;
     }
 `;
 
@@ -42,7 +47,10 @@ const HomeView = props => {
             <HomeContent>
                 <HomeText>
                     <h2>Welcome to Artsy!</h2>
-                    <p>Artsy is an online platform for artists of all kinds to display their art.</p>
+                    <p>
+                        Artsy is an online platform for artists of all kinds to display their art. <br/>
+                        Feel free to browse our member's awesome posts!
+                    </p>
                 </HomeText>
                 <HomeLinks>
                     <p>
