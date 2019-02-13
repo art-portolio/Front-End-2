@@ -1,14 +1,13 @@
 import React from 'react';
 
 import GuestHeader from '../GuestHeader';
+import LogInForm from '../LogInForm';
 
 const LoginView = props => {
     return (
         <div>
             <GuestHeader />
-            <div>
-                Testing LoginView
-            </div>
+            <LogInForm />
         </div>
     );
 }
