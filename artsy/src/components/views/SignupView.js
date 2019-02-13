@@ -1,16 +1,35 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import GuestHeader from '../GuestHeader';
+import SignUpForm from '../SignUpForm';
 
-const SignupView = props => {
-    return (
-        <div>
-            <GuestHeader />
+class SignupView extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            fullName: "",
+            email: "",
+            password: "",
+            username: ""
+        }
+    }
+
+    inputHandler = event => {
+        this.setState( 
+            {
+                [event.target.name]: event.target.value
+            }
+        );
+    }
+
+    render() {
+        return (
             <div>
-                Testing Sign Up View
+                <GuestHeader />
+                <SignUpForm />
             </div>
-        </div>
-    );
+        );
+    }
 }
 
 export default SignupView;
